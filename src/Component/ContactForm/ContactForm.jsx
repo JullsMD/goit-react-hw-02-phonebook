@@ -10,8 +10,8 @@ const INITIAL_STATE = {
 };
 
 class ContactForm extends Component {
-  state = INITIAL_STATE;
-  reset = () => this.setState(INITIAL_STATE);
+  state = { ...INITIAL_STATE };
+  reset = () => this.setState({ ...INITIAL_STATE });
 
   handleSubmit = e => {
     e.preventDefault();
